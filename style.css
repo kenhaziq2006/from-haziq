@@ -1,0 +1,434 @@
+/* ===========================
+   Google Font Settings
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    overflow:hidden;
+    height:100vh;
+
+    background:linear-gradient(
+        135deg,
+        #fff7fb,
+        #ffeaf4,
+        #fffdf8
+    );
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* ===========================
+Loading Screen
+=========================== */
+
+.loading{
+    position:fixed;
+    inset:0;
+
+    background:#fff8fb;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    z-index:999;
+    animation:loadingFade 2.5s forwards;
+}
+
+.loading h1{
+    font-size:30px;
+    color:#ff6b9c;
+    font-family:'Great Vibes',cursive;
+}
+
+@keyframes loadingFade{
+
+0%{
+opacity:1;
+}
+
+80%{
+opacity:1;
+}
+
+100%{
+opacity:0;
+visibility:hidden;
+}
+
+}
+
+/* ===========================
+Container
+=========================== */
+
+.container{
+
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+
+padding:20px;
+
+}
+
+.card{
+
+width:430px;
+max-width:95%;
+
+padding:45px;
+
+text-align:center;
+
+border-radius:30px;
+
+background:rgba(255,255,255,.45);
+
+backdrop-filter:blur(18px);
+
+box-shadow:
+0 15px 45px rgba(0,0,0,.08);
+
+animation:pop 1.2s;
+
+}
+
+/* ===========================
+Text
+=========================== */
+
+.card h2{
+
+font-size:30px;
+
+margin-bottom:0px;
+
+color:#ff5b8d;
+
+}
+
+.card h1{
+
+font-family:'Great Vibes',cursive;
+
+font-size:40px;
+
+color:#ff4b7d;
+
+margin-bottom:5px;
+
+}
+
+.card p{
+
+margin-top:20px;
+
+font-size:17px;
+
+line-height:1.8;
+
+color:#666;
+
+}
+
+/* ===========================
+Cake
+=========================== */
+
+.cake{
+
+width: 60px;
+
+animation:floatCake 3s ease-in-out infinite;
+
+}
+
+@keyframes floatCake{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ===========================
+Buttons
+=========================== */
+
+.buttons{
+
+margin-top:35px;
+
+display:flex;
+
+justify-content:center;
+
+gap:18px;
+
+flex-wrap:wrap;
+
+}
+
+button{
+
+padding:16px 34px;
+
+border:none;
+
+border-radius:999px;
+
+font-size:16px;
+
+cursor:pointer;
+
+transition:.3s;
+
+font-weight:600;
+
+}
+
+#yesBtn{
+
+background:#ff5f93;
+
+color:white;
+
+box-shadow:
+0 10px 25px rgba(255,95,147,.35);
+
+}
+
+#yesBtn:hover{
+
+transform:translateY(-4px) scale(1.05);
+
+}
+
+#noBtn{
+
+background:white;
+
+color:#ff5f93;
+
+}
+
+/* ===========================
+Floating Hearts
+=========================== */
+
+#hearts{
+
+position:fixed;
+
+inset:0;
+
+pointer-events:none;
+
+overflow:hidden;
+
+}
+
+.heart{
+
+position:absolute;
+
+bottom:-40px;
+
+font-size:22px;
+
+animation:heartFloat linear forwards;
+
+opacity:.85;
+
+}
+
+@keyframes heartFloat{
+
+0%{
+
+transform:
+translateY(0)
+scale(.7)
+rotate(0);
+
+opacity:0;
+
+}
+
+20%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:
+translateY(-120vh)
+scale(1.4)
+rotate(360deg);
+
+opacity:0;
+
+}
+
+}
+
+/* ===========================
+Card Animation
+=========================== */
+
+@keyframes pop{
+
+0%{
+
+transform:scale(.7);
+
+opacity:0;
+
+}
+
+100%{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
+
+/* ===========================
+Responsive
+=========================== */
+
+@media(max-width:600px){
+
+.card{
+
+padding:30px;
+
+}
+
+.card h1{
+
+font-size:55px;
+
+}
+
+.card h2{
+
+font-size:22px;
+
+}
+
+.cake{
+
+width:140px;
+
+}
+
+.card p{
+
+font-size:15px;
+
+}
+
+button{
+
+width:100%;
+
+}
+
+}
+
+#musicBtn{
+
+position:fixed;
+
+bottom:25px;
+
+right:25px;
+
+width:70px;
+
+height:70px;
+
+cursor:pointer;
+
+z-index:999;
+
+transition:.3s;
+
+}
+
+
+#musicBtn:hover{
+
+transform:scale(1.15);
+
+}
+
+#musicBtn{
+
+    position:fixed;
+
+    bottom:25px;
+
+    right:25px;
+
+    width:70px;
+
+    height:70px;
+
+    cursor:pointer;
+
+    z-index:999;
+
+    transition:0.3s;
+
+    animation:musicFloat 3s infinite ease-in-out;
+
+}
+
+
+#musicBtn:hover{
+
+    transform:scale(1.15);
+
+}
+
+
+@keyframes musicFloat{
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+}

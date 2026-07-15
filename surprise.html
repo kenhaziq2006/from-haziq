@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For someone ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+    overflow-y:auto;
+    background:linear-gradient(180deg,#fff8fc,#ffeef5,#fffdfb);
+}
+
+.surprise{
+
+max-width:900px;
+margin:auto;
+padding:80px 25px;
+text-align:center;
+
+}
+
+.title{
+
+font-family:'Great Vibes',cursive;
+font-size:70px;
+color:#ff4d8d;
+margin-bottom:20px;
+
+animation:fadeDown 1.5s;
+
+}
+
+.subtitle{
+
+font-size:18px;
+color:#666;
+margin-bottom:50px;
+
+animation:fadeUp 2s;
+
+}
+
+.bouquet{
+
+width:200px;
+
+animation:float 4s infinite ease-in-out;
+
+}
+
+@keyframes float{
+
+50%{
+transform:translateY(-15px);
+}
+
+}
+
+.letter{
+
+margin-top:60px;
+
+background:white;
+
+padding:35px;
+
+border-radius:25px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+line-height:2;
+
+font-size:17px;
+
+color:#555;
+
+text-align:left;
+
+}
+
+.photo-grid{
+
+margin-top:70px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+
+}
+
+.photo{
+
+height:250px;
+
+border-radius:20px;
+
+border:3px dashed #ff9ec0;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:18px;
+
+color:#999;
+
+background:white;
+
+transition:.4s;
+
+}
+
+.photo:hover{
+
+transform:scale(1.03);
+
+}
+
+.footer{
+
+margin:70px 0;
+
+font-size:15px;
+
+color:#888;
+
+}
+
+@keyframes fadeDown{
+
+from{
+opacity:0;
+transform:translateY(-40px);
+}
+
+to{
+opacity:1;
+transform:none;
+}
+
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Music Player -->
+
+<audio id="bgMusic" loop>
+    <source src="my love.mp3" type="audio/mpeg">
+</audio>
+
+<img id="musicBtn" src="music.png" alt="Music Button">
+
+<div id="hearts"></div>
+
+<section class="surprise">
+
+<h1 class="title">
+Happy Birthday someone 🤍
+</h1>
+
+<p class="subtitle">
+Every little detail here was made with love.
+</p>
+
+<img src="bouquet.png" class="bouquet">
+
+<div class="letter">
+
+<h2 style="text-align:center;color:#ff5f93;margin-bottom:25px;">
+💌 To My Dearest someone
+</h2>
+
+<p>
+
+Happy Birthday to the most wonderful person I've ever known.
+
+Thank you for bringing so much warmth, kindness, and happiness into this world.
+
+Every conversation with you, every smile, and every little moment we share has become a memory I'll always treasure.
+
+I hope today reminds you how incredibly loved you are.
+
+May your heart always stay full of hope, your smile never fade, and your dreams slowly become reality.
+
+No matter where life takes us, I'll always be wishing nothing but happiness, peace, and beautiful moments for you.
+
+Thank you for simply being you.
+
+Happy Birthday once again, someone.
+
+You deserve every beautiful thing this world has to offer.
+
+❤️
+
+</p>
+
+</div>
+
+<h2 style="margin-top:80px;color:#ff5f93;">
+📸 your picture
+</h2>
+
+<div class="photo-grid">
+
+<div class="photo">
+Replace with Photo 1
+</div>
+
+<div class="photo">
+Replace with Photo 2
+</div>
+
+<div class="photo">
+Replace with Photo 3
+</div>
+
+<div class="photo">
+Replace with Photo 4
+</div>
+
+<div class="photo">
+Replace with Photo 5
+</div>
+
+<div class="photo">
+Replace with Photo 6
+</div>
+
+</div>
+
+<div class="footer">
+
+Made with ❤️ by haziq especially for you.
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
